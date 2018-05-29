@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <!--!<div class="catalog">
+    <div class="product" *ngFor="let current of catalog">
+  <h2>
+    {{current.titre}} </h2>
+    <img src="{{current.url}}"/>
+    <p> {{current.prix}} €</p>
+    </div>  
+  
+</div>-->
+
+<div class="catalog">
+
+  <app-product-thumb  class="product" *ngFor="let current of catalog"  [data]="current" >
+  </app-product-thumb>
+
+</div>
