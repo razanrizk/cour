@@ -1,0 +1,42 @@
+p {
+  animation-duration: 25s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  75% {
+  font-size: 200%;
+  margin-left: 25%;
+  width: 150%;
+}
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+  div {
+      height: 100px;
+      width:100px;
+      background-color: red;
+      display: block;   
+      animation-duration: 25s;
+      animation-name: shape;
+    }
+
+  @keyframes shape { 
+  form {
+      transform: scale(0,0);
+       }
+       50%{
+        transform: scale(0.8,0.8);
+      }
+    
+      to {
+        transform: scale(2,2);
+      }
+       }

@@ -1,0 +1,177 @@
+	// *****************************************************************
+		// Créer un tableau contenant une 10 aine de notes / 20, calculer la moyenne et
+		// afficher dans la console
+
+		/*
+		 * double moyenne=0; double sum=0; double[] notes =
+		 * {20,17,12,12,13,14,15,15,16,17}; for(int i=0; i< notes.length;i++) {
+		 * sum=sum+notes[i];
+		 * 
+		 * }
+		 * 
+		 * System.out.print("Le Moyenne est = "); moyenne=sum/(notes.length);
+		 * System.out.println(moyenne);
+		 */
+		// ******************************************************************************************************
+		// Créer un tableau contenant 10 notes / 20 et classer le tableau par ordre
+		// croissant ( du + petit au + grand )
+
+		/*double moyenne = 0;
+		double temp = 0;
+		double[] notes = { 5, 6, 3, 10, 8, 2, 1, 4, 7, 9 };
+		for (int i = 0; i < notes.length; i++)
+			for (int j = i + 1; j < notes.length-1; j++) {
+				if (notes[i] > notes[j]) {
+					temp = notes[i];
+					notes[i] = notes[j];
+					notes[j] = temp;
+				}
+
+			}
+
+		System.out.print("{");
+		for (int x = 0; x < notes.length; x++) {
+			System.out.print(notes[x]);
+			System.out.print(",");
+
+		}
+		
+		System.out.print("}");
+
+	}
+*/
+		//*********************************************jeu moins plus**************************************************
+		/*int player1=0;
+        int player2=0;    		
+        boolean b=false;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Player1: Veuillez nous donner votre nombre");
+		player1=scan.nextInt();
+		System.out.println("Player2: Veuillez nous donner votre nombre");
+		player2=scan.nextInt();
+		if (player2 == player1)
+		{
+			System.out.println("Barvo! Vous avez gagné ");
+			b=true;
+		}
+		else
+			while(b==false)
+			{
+				if (player2<player1)
+				{
+					System.out.println("Le nombre que vous avez sasir est moins de mon nombre, Essyez un autre fois");
+					player2=scan.nextInt();
+					if (player2 == player1)
+					{
+						System.out.println("Barvo! Vous avez gagné ");
+						b=true;
+					}
+				}
+				else
+			   if (player2>player1)
+			   {
+				   System.out.println("Le nombre que vous avez sasir est plus de mon nombre, Essyez un autre fois");
+				   player2=scan.nextInt();
+				   if (player2 == player1)
+					{
+						System.out.println("Barvo! Vous avez gagné ");
+						b=true;
+					}
+				 }
+				
+		    	
+			}
+		
+		*************************************************Les grenoilles**********************************************************/
+		/*double[] distances= {60,40,10,20,30,80,60,17};
+		double [] grenouilles= {0,0,0,0,0,0,0,0};
+		 
+		int grenouille_max=53;
+		double temp = 0;
+		int total=0;
+		for (int i = 0; i < distances.length; i++)
+			for (int j = i + 1; j < distances.length; j++) {
+				if (distances[i] > distances[j]) {
+					temp = distances[i];
+					distances[i] = distances[j];
+					distances[j] = temp;
+				}
+
+			}
+		
+		
+		for (int x = 1; x <= grenouille_max+1; x++)
+		{
+			
+				for (int t = 0; t <8; t++)
+				{
+			    	grenouilles[t]=grenouilles[t]+1;
+			    	grenouille_max=grenouille_max-1;
+		        	System.out.println(grenouille_max);
+
+			    	
+				}
+			
+				
+		}
+
+		for (int t = 0; t < grenouilles.length; t++)
+		{
+        	System.out.println(grenouilles[t]);
+		}
+		
+		
+		
+***************************Triez les employés suivants (nom, sexe, âge, poids):***************************************************/
+		
+			/*
+		String[][][][] Person = new String[][][][]  {
+				{"Julie",   "F" , "40", "50"},
+				{"Marc",    "H" , "90", "100"},
+				{"Julien",    "H" , "20", "45"},
+				{"Anna",    "F" , "35", "60"},
+				{"Thierry", "H" , "45", "55"},
+				{"François", "H", "33", "80"},
+				{"Martine",  "F", "67", "62"}
+		};
+		
+		
+		public static String[][][][] sort_person( String[][][][] p_person ){
+			
+			int i 			= 0;
+			int j 			= 0;
+			int x            =0;
+			int y            =0;
+			int max 		= p_person.length - 1;
+			int max2 		= p_person.length - 1;
+			int max3 		= p_person.length - 1;
+			int max4 		= p_person.length - 1;
+			String temp;
+			
+			String[] current 	= null;
+			String[] next 		= null;
+			
+			
+			for( i = 0; i < max; i++ ) {
+	    		for( j = 0; j < max2; j++ )
+	    			for( x = 0; x < max3; x++ )
+	    				for( y = 0; y < max4; y++ )
+	    		                   {
+				                         if (person[i][j][x][y]>person[i][j+1][x][y])
+				                        	    temp=person[i][j][x][y];
+				                                person[i][j][x][y]=person[i][j+1][x][y];
+				                                person[i][j+1][x][y]=temp;
+			                                       
+		                             }
+
+		
+		
+	    		for( i = 0; i < max; i++ ) {
+		    		for( j = 0; j < max2; j++ )
+		    			for( x = 0; x < max3; x++ )
+		    				for( y = 0; y < max4; y++ )
+		    		        	System.out.println(person[i][j][x][y]);
+
+			
+			
+		*/
